@@ -1,0 +1,23 @@
+# https://git-scm.com/docs/gitignore
+# https://help.github.com/articles/ignoring-files
+# Example.gitignore files : https://github.com/github/gitignore
+_notes/
+/bower_components/
+/node_modules/
+/Images/
+/about1.html
+/academic support old.html
+/academic support2.html
+/academic_support_zipped.zip
+/departments1.html
+/Faculty-old.html
+/Faculty Full Time list.docx
+/content.html
+/Campuses Content.docx
+/Adjunct_Faculty_-_SVG_Images.zip
+/Adjunct List.docx
+/index - Copy.html
+/htmlcheatsheet.pdf
+/test.htm
+/OUTLINE FOR WEBSITE.docx
+/school.zip

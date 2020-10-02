@@ -1,0 +1,172 @@
+@charset "utf-8";
+body {
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: source-sans-pro;
+    font-style: normal;
+    font-weight: 400;
+    background-image: url(../Images/Sci%20Bldg%20Front.jpg);
+    margin-top: 0%;
+    margin-right: 0%;
+    margin-left: 0%;
+   
+}
+h1 {
+    font-family: kristi;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4em;
+    text-align: center;
+    color: #080809;
+    background-color: #FFFFFF;
+    margin-top: 150px;
+    width: auto;
+    
+}
+section {
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 10px;
+    width: 40%;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    float: right;
+    margin-top: 147px;
+    margin-right: 2%;
+    margin-bottom: 0%;
+    margin-left: 0%;
+}
+aside {
+    float: left;
+    width: 50%;
+   }
+
+h2 {
+    font-weight: 700;
+    font-size: 1.5em;
+    font-family: source-sans-pro;
+    font-style: normal;
+    margin-top: -8px;
+}
+.navbar.navbar-expand-lg.navbar-light.bg-light .navbar-brand{
+    color: #6D0AFB;
+    font-size: 1em;
+}   
+.navbar-nav.mr-auto .nav-item .nav-link:hover{
+    color: #F303C5;
+}
+
+header {
+    margin-top: 25px;
+    margin-right: 5px;
+    margin-bottom: 80px;
+    margin-left: 40px;
+    font-family: source-sans-pro;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    color: #FFFFFF;
+    float: right;
+   }
+footer {
+    font-size: x-small;
+    font-weight: 700;
+    bottom: 0px;
+    position: fixed;
+    float: left;
+    overflow-x: visible;
+    clear: both;
+    text-align: center;
+    background-image: -webkit-linear-gradient(270deg,rgba(11,11,11,1.00) 3.63%,rgba(11,10,10,0.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(11,11,11,1.00) 3.63%,rgba(11,10,10,0.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(11,11,11,1.00) 3.63%,rgba(11,10,10,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(11,11,11,1.00) 3.63%,rgba(11,10,10,0.00) 100%);
+    width: 100%;
+    height: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+body nav a {
+    text-decoration: source-sans-pro;
+    color: #F507E5;
+}
+a {
+}
+
+.navlist {
+    list-style-type: none;
+    background-color: #C4C2C2;
+    overflow-x: hidden;
+}
+h3 {
+    font-size: x-large;
+    font-weight: 700;
+    color: #6B6464;
+    font-family: source-sans-pro;
+    font-style: normal;
+    margin-top: 9px;
+
+}
+@media (max-width: 700px){
+section1  {
+    background-color: #FDFDFD;
+	color: #000000;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 2.5%;
+    padding-left: 2.5%;
+    padding-top: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+	@media (max-width: 700px){
+section {
+    background-color: #FFFDFD;
+	color: #000000;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    padding-left: 2.5%;
+    padding-top: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 2.5%;
+}
+aside {
+    float: none;
+    width: 100%;
+}
+header {
+    text-align: left;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	}
+h1 {
+    font-family: kristi;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.8em;
+    text-align: center;
+}
+
+}
+
+@media (max-height:650px){
+header {
+    text-align: left;
+	background-image: url(url);
+    margin-top: 55px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    float: none;
+    color: #060AF1;
+
+}
+	}

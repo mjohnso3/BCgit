@@ -1,0 +1,135 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+       <script>
+            const urlParams = new URLSearchParams(window.location.search);
+        const dept = urlParams.get('department');   
+        if(dept == '') {
+            dept= 'bs';
+        }
+        var departments =   
+            
+               
+                   [
+                       {   "code":"bs",
+                           "caption":"Biological Sciences",
+                           "subjects":[],
+                           "lecturers":
+                           [
+                               {"first_name":"Adam","last_name":"Matulik","image":"adammatulik.jpg","description":"", "classes":"Marine Biology","qualification":["Master Of Science"],"schedule_url":""},
+                               {"first_name":"Donald","last_name":"Nwankwo","image":"donaldnwankwo.jpg","description":"", "classes":"Biology","qualification":["Doctor Of Philosophy"],"schedule_url":""},
+                               {"first_name":"Edward","last_name":"Shanks","image":"edwardshanks.jpg","description":"", "classes":"Biology","qualification":["Master Of Science"],"schedule_url":""},       
+                               {"first_name":"Maryam","last_name":"Harkas","image":"maryamharkas.jpg","description":"", "classes":"Biology","qualification":["Bachelor Of Science"],"schedule_url":""},
+                               {"first_name":"Sherwin","last_name":"Jack","image":"sherwinjack.jpg","description":"", "classes":"Integrative Biology","qualification":["Doctor Of Philosophy"],"schedule_url":""},
+                               {"first_name":"Edward","last_name":"Shanks","image":"edwordshanks.jpg","description":"", "classes":"Biology","qualification":["Master Of Science","Master Of Science"],"schedule_url":""},      
+                               {"first_name":"Zerihun","last_name":"Beshah","image":"zerihunbeshah.jpg","description":"", "classes":"Biology","qualification":["Bachelor Of Science","Doctor Of Science"],"schedule_url":""},                        
+                               {"first_name":"Carlos","last_name":"Bidot","image":"carlosbidot.jpg","description":"", "classes":"Medicine","qualification": ["Doctor Of Medicine"],"schedule_url":""},
+                               {"first_name":"Christopher","last_name":"Henderson","image":"christopherhenderson.jpg","description":"", "classes":"Molecular Biology, Microbiology, Chiropractic","qualification":["Doctor Of Chiropractic"],"schedule_url":""},
+                               {"first_name":"Frank","last_name":"Puentes","image":"frankpuentes.jpg","description":"", "classes":"Medicine, Biomedical Science","qualification":["Doctor Of Medicine","Master Of Science"],"schedule_url":""},
+                               {"first_name":"Justo","last_name":"Lopex","image":"justolopex.jpg","description":"", "classes":"Medicine, Biomedical Sciences","qualification":["Doctor Of Medicine","Doctor Of Philosophy"],"schedule_url":""},
+                               {"first_name":"Linda","last_name":"Abbott","image":"lindaabbott.jpg","description":"", "classes":"Chiropractic","qualification":["Doctor Of Chiropractic"],"schedule_url":""},
+                               {"first_name":"Marianela","last_name":"Castellanos","image":"marianelacastellanos.jpg","description":"", "classes": "Chiropractic","qualification":["Doctor Of Chiropractic"],"schedule_url":""},
+                               {"first_name":"Milhenka","last_name":"Auguste","image":"milhenkaauguste.jpg","description":"", "classes":"Biology, Medical Sciences","qualification": ["Bachelor Of Science","Doctor Of Medicine"],"schedule_url":""},
+                               {"first_name":"Mizanur","last_name":"Rahman","image":"mizanurrahman.jpg","description":"", "classes":"Medicine","qualification":["Doctor Of Medicine"],"schedule_url":""},
+                               {"first_name":"Lesly","last_name":"Philippe","image":"leslyphilippe.jpg","description":"", "classes":"Medicine","qualification": ["Doctor Of Medicine"],"schedule_url":""}                                                       
+                           ]
+                       },
+                   
+                       {
+                       "code": "ps",     
+                       "caption":"Physical Sciences",
+                       "subjects":[],
+                       "lecturers":
+                       [
+                           {"first_name":"Chih-Hung","last_name":"Wang","image":"chihhungwang.jpg","description":"", "classes":"Chemistry","qualification": ["Doctor Of Philosophy"],"schedule_url":""},
+                           {"first_name":"Collins","last_name":"Boston","image":"collinsboston.jpg","description":"", "classes":"Chemistry","qualification":["Bachelor Of Science"],"schedule_url":""},
+                           {"first_name":"Madan","last_name":"Singh","image":"madansingh.jpg","description":"", "classes":"Chemistry","qualification":["Master Of Science"],"schedule_url":""},
+                           {"first_name":"Prakash","last_name":"Manandhar","image":"prakashmanandhar.jpg","description":"", "classes":"Chemistry","qualification":["Doctor Of Philosophy"],"schedule_url":""},
+                           {"first_name":"Ryan","last_name":"Mahabir","image":"ryanmahabir.jpg","description":"", "classes":"Chemistry","qualification":["Master Of Science"],"schedule_url":""},    
+                           {"first_name":"Sritana","last_name":"Yasui","image":"sritanayasui.jpg","description":"", "classes":"Chemistry","qualification":["Doctor Of Philosophy"],"schedule_url":""},     
+                           {"first_name":"Theresa","last_name":"Estanislao","image":"theresaestanislao.jpg","description":"", "classes":"Chemistry","qualification":["Master Of Science"],"schedule_url":""},  
+                           {"first_name":"Jorge","last_name":"Lopez-Tuero","image":"jorgelopextuero.jpg","description":"", "classes":"Phyysics","qualification":["Master Of Science"],"schedule_url":""}                           
+                       ]
+                   }];
+  
+        function getDeptNameFromArray(dept){
+              var rcount = departments.length;
+              var deptName = "";
+              for(var i=0;i<rcount;i++){
+                if(departments[i]['code'] == dept) {
+                    deptName  = departments[i].caption;
+                    i = rcount;
+                }
+              }
+              return deptName;
+          }           
+          function getLecturersFromArray(dept){
+              var rcount = departments.length;
+              var lecturers = [];
+              for(var i=0;i<rcount;i++){
+                if(departments[i]['code'] == dept) {
+                    lecturers  = departments[i].lecturers;
+                    i = rcount;
+                }
+              }
+              return lecturers;
+          }           
+        window.addEventListener("load", () =>{
+
+          var lecturers = getLecturersFromArray(dept);
+          var rlcount = lecturers.length;
+          var card ='';
+          var cardPerRow = 3;
+          var currCard = 0;
+          for(var i=0;i<rlcount;i++){
+            if(currCard == 0){
+                card +=`<div class='row'>`;
+            }
+            debugger;
+            card += `
+            <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/faculty/${lecturers[i].image}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title"><strong>${lecturers[i].first_name} ${lecturers[i].last_name}</strong></h5>
+                    <p class="card-text">${lecturers[i].description}</p>
+                    <p class="card-text">${lecturers[i].classes}</p>
+                    <a target='_blank' href="${lecturers[i].schedule_url}" class="btn btn-primary"> View Schedule</a>
+                    </div>
+                </div>
+          </div>`;
+          if(currCard == (cardPerRow-1) || i == (rlcount-1)){
+                card +=`</div>`;
+                currCard=0;
+          } else {
+            currCard++;
+          }
+
+          document.getElementById('container').innerHTML = card;
+        }
+        document.getElementsByClassName('dept-title')[0].innerHTML =  getDeptNameFromArray(dept);
+        });   
+ 
+       </script>
+       <style>
+           .col-sm {
+
+                margin-bottom: 2%;
+            }
+            a.btn.btn-primary {
+                width: 100%;
+            }
+       </style>    
+   </head>
+   <body>
+    <h1 class='bd-content-title dept-title'></h1>   
+    <div class="container" id='container'></div> 
+   </body>
+   </html>

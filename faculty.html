@@ -1,0 +1,252 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+       <script>
+            const urlParams = new URLSearchParams(window.location.search);
+        const dept = urlParams.get('department');   
+        if(dept == '') {
+            dept= 'bs';
+        }
+        var departments =   
+            
+               
+                   [
+                       {   "code":"bs",
+                           "caption":"Biological Sciences",
+                           "subjects":[],
+                           "lecturers":
+                           [
+							   
+							   {"first_name":"Reynaldo","last_name":"Acurio","image":"reynaldoacurio.jpg","description":"Doctor of Medicine", "classes":"Biological Sciences","qualification":["Doctor of  Medicine"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=racurio", "type":"Full Time Faculty"},
+							   
+							   {"first_name":"Jacqueline ","last_name":"Conrad","image":"jacquelineconrad.jpg","description":"Doctor of Veterinary Medicine", "classes":"Biological Sciences","qualification":["Doctor of Veterinary Medicine"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=jconrad", "type":"Full Time Faculty"},		   
+							   
+							   {"first_name":"Janne ","last_name":"Nielsen","image":"jannenielsen.jpg","description":"Doctor of Philosophy", "classes":"Biological Sciences","qualification":["Master Of Science"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=JNIELSEN", "type":"Full Time Faculty"},
+							   
+							    {"first_name":"Natalie ","last_name":"Osterhoudt","image":"natalieosterhoudt.jpg","description":"Master of Science", "classes":"Biological Sciences","qualification":["Master of Science"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=nosterho", "type":"Full Time Faculty"},
+							   
+							   {"first_name":"Vijay ","last_name":"Parkash","image":"vijayparkash.jpg","description":"Doctor of Medicine", "classes":"Biological Sciences","qualification":["Doctor of Medicine"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=vlaxmi", "type":"Full Time Faculty"},
+							   
+							   {"first_name":"Katherine ","last_name":"Peach","image":"katherinepeach.jpg","description":"Doctor of Philosophy", "classes":"Biological Sciences","qualification":["Biology"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=KPEACH", "type":"Full Time Faculty"},
+							   
+							   {"first_name":"Linda","last_name":"Abbott","image":"lindaabbott.jpg","description":"Doctor Of Chiropractic Medicine", "classes":"Biological Sciences","qualification":["Doctor Of Chiropractic"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=LABBOTT1", "type":"Part Time Faculty"},
+							   
+							   {"first_name":"Milhenka","last_name":"Auguste","image":"milhenkaauguste.jpg","description":"", "classes":"Biological Sciences","qualification": ["Bachelor Of Science","Doctor Of Medicine"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=maugust1", "type":"Part Time Faculty"},
+							   
+							    {"first_name":"Lobna","last_name":"Albassam","image":"lobnaalbassam.jpg","description":"Doctor of Philosophy", "classes":"Biological Sciences","qualification":["Doctor Of Philosophy"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=lalbassa", "type":"Part Time Faculty"}, 
+							   {"first_name":"Zerihun","last_name":"Beshah","image":"zerihunbeshah.jpg","description":"Doctor of Philosophy", "classes":"Biological Sciences","qualification":["Doctor Of Philosophy"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=zbeshah", "type":"Part Time Faculty"},                        
+                               {"first_name":"Carlos","last_name":"Bidot","image":"carlosbidot.jpg","description":"Doctor of Medicine", "classes":"Biological Sciences","qualification": ["Doctor Of Medicine"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=cbidot", "type":"Part Time Faculty"},
+							   {"first_name":"Marianela","last_name":"Castellanos","image":"marianelacastellanos.jpg","description":"Doctor Of Chiropractic Medicine", "classes": "Biological Sciences","qualification":["Doctor Of Chiropractic"],"schedule_url":"", "type":"Part Time Faculty"},
+                               							   
+							   {"first_name":"Maryam","last_name":"Harkas","image":"maryamharkas.jpg","description":"Master of Science", "classes":"Biological Sciences","qualification":["Master of Science"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=MHARKAS", "type":"Part Time Faculty"},
+							   {"first_name":"Christopher","last_name":"Henderson","image":"christopherhenderson.jpg","description":"Doctor of Chiropractic Medicine", "classes":"Biological Sciences","qualification":["Doctor Of Chiropractic Medicine"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=CHENDER1", "type":"Part Time Faculty"},
+                               {"first_name":"Sherwin","last_name":"Jack","image":"sherwinjack.jpg","description":"Doctor of Philosophy", "classes":"Biological Sciences","qualification":["Doctor Of Philosophy"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=SJACK", "type":"Part Time Faculty"},
+                               
+							   {"first_name":"Lesly","last_name":"Jean Philippe", "image":"leslyjeanphilippe.jpg","description":"Doctor of Medicine", "classes":"Biological Sciences","qualification": ["Doctor Of Medicine"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=ljeanphi", "type":"Part Time Faculty"},  
+					   			{"first_name":"Justo","last_name":"Lopez","image":"justolopez.jpg","description":"Doctor or Medicine & Philosophy", "classes":"Biological Sciences","qualification":["Doctor Of Medicine","Doctor Of Philosophy"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=jlopez5", "type":"Part Time Faculty"},
+					   			
+							    {"first_name":"Alessandra","last_name":"Manzon","image":"alessandramanzon.jpg","description":"Master of Science", "classes":"Biological Sciences","qualification":["Master of Science"],"schedule_url":"", "type":"Part Time Faculty"},
+							   
+							   {"first_name":"Adam","last_name":"Matulik","image":"adammatulik.jpg","description":"Master of Science", "classes":"Biological Sciencesy","qualification":["Master Of Science"],"schedule_url":"", "type":"Part Time Faculty"},
+							   
+							   {"first_name":"Donald","last_name":"Nwankwo","image":"donaldnwankwo.jpg","description":"Doctor of Philosophy", "classes":"Biological Sciences","qualification":["Doctor Of Philosophy"],"schedule_url":"", "type":"Part Time Faculty"},
+							   
+							   {"first_name":"Anneka","last_name":"Osmun","image":"annekaosmun.jpg","description":"Master of Science", "classes":"Biological Sciences","qualification":["Master of Science"],"schedule_url":"", "type":"Part Time Faculty"},
+							   
+							   {"first_name":"Angel","last_name":"Pena","image":"angelpena.jpg","description":"Doctor of Medicine", "classes":"Biological Sciences","qualification":["Master of Science"],"schedule_url":"", "type":"Part Time Faculty"},
+					   		 	{"first_name":"Frank","last_name":"Puentes","image":"frankpuentes.jpg","description":"Doctor of Medicine", "classes":"Medicine, Biomedical Science","qualification":["Doctor Of Medicine"],"schedule_url":"", "type":"Part Time Faculty"},
+                               
+								{"first_name":"Mizanur","last_name":"Rahman","image":"mizanurrahman.jpg","description":"Doctor of Medicine", "classes":"Biological Sciences","qualification":["Doctor Of Medicine"],"schedule_url":"", "type":"Part Time Faculty"},
+							   
+							   {"first_name":"Andrea","last_name":"Raymond","image":"andrearaymond.jpg","description":"Doctor of Philosophy", "classes":"Biological Sciences","qualification":["Doctor of Philosophy"],"schedule_url":"", "type":"Part Time Faculty"},
+							   
+							   {"first_name":"Annette","last_name":"Sanz Pardo","image":"annettesanzpardo.jpg","description":"Master of Science", "classes":"Biological Sciences","qualification":["Master of Science"],"schedule_url":"", "type":"Part Time Faculty"},
+									
+								{"first_name":"Edward","last_name":"Shanks","image":"edwardshanks.jpg","description":"Master of Science", "classes":"Biological Sciences","qualification":["Master Of Science"],"schedule_url":"", "type":"Part Time Faculty"},
+							   
+							   {"first_name":"Algevis","last_name":"Wrench","image":"annettesanzpardo.jpg","description":"Doctor of Philosophy", "classes":"Biological Sciences","qualification":["Doctor of Philosophy"],"schedule_url":"", "type":"Part Time Faculty"}
+                               		                                                        
+                           ]
+                       },
+                   
+                       {
+                       "code": "ps",     
+                       "caption":"Physical Sciences",
+                       "subjects":[],
+                       "lecturers":
+                       [
+                           {"first_name":"Husam","last_name":"Abbasi","image":"husamabbasi.jpg","description":"Master of Science", "classes":"Chemistry","qualification": ["Master of Science"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=habbasi", "type":"Full Time Faculty"},
+						   
+						   {"first_name":"Collins","last_name":"Boston","image":"collinsboston.jpg","description":"", "classes":"Chemistry","qualification":["Bachelor Of Science"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=CBOSTON", "type":"Full Time Faculty"},					   
+						   {"first_name":"Rajendra","last_name":"Shakya","image":"rajendrashakya.jpg","description":"Doctor of Philosophy", "classes":"Chemistry","qualification": ["Doctor Of Philosophy"],"schedule_url":"", "type":"Full Time Faculty"},
+						   
+                           {"first_name":"Madan","last_name":"Singh","image":"madansingh.jpg","description":"Doctor of Philosophy", "classes":"Chemistry","qualification":["Doctor of Philosophy"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=msingh", "type":"Full Time Faculty"},
+                           {"first_name":"Prakash","last_name":"Manandhar","image":"prakashmanandhar.jpg","description":"Doctor of Philosophy", "classes":"Chemistry","qualification":["Doctor Of Philosophy"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=PMANANDH", "type":"Full Time Faculty"},
+                           {"first_name":"Ryan","last_name":"Mahabir","image":"ryanmahabir.jpg","description":"Master of Science", "classes":"Chemistry","qualification":["Master Of Science"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=RMAHABIR", "type":"Full Time Faculty"},    
+                           
+						    {"first_name":"Chih Hung","last_name":"Wang","image":"chihhungwang.jpg","description":"Doctor of Philosophy", "classes":"Chemistry","qualification": ["Doctor Of Philosophy"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=CWANG2", "type":"Full Time Faculty"},
+						   					   
+						   {"first_name":"Sritana","last_name":"Yasui","image":"sritanayasui.jpg","description":"Doctor of Philosophy", "classes":"Chemistry","qualification":["Doctor Of Philosophy"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=syasui", "type":"Part Time Faculty"},     
+                           {"first_name":"Theresa","last_name":"Estanislao","image":"theresaestanislao.jpg","description":"Doctor of Philosophy", "classes":"Chemistry","qualification":["Master Of Science"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=TESTANIS", "type":"Part Time Faculty"}, 
+						   
+						    {"first_name":"Jorge","last_name":"Lopez Tuero","image":"jorgelopeztuero.jpg","description":"Master of Science", "classes":"Physics","qualification":["Master Of Science"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=jlopeztu", "type":"Full Time Faculty"}
+                       ]
+                   }];
+  
+        function getDeptNameFromArray(dept){
+              var rcount = departments.length;
+              var deptName = "";
+              for(var i=0;i<rcount;i++){
+                if(departments[i]['code'] == dept) {
+                    deptName  = departments[i].caption;
+                    i = rcount;
+                }
+              }
+              return deptName;
+          }           
+
+          function getLecturersFromArray(dept){
+              var rcount = departments.length;
+              var lecturers = [];
+              for(var i=0;i<rcount;i++){
+                if(departments[i]['code'] == dept) {
+                    lecturers  = departments[i].lecturers;
+                    i = rcount;
+                }
+              }
+        
+              return lecturers;
+          }  
+        function generateDepartment(lecturers, header){
+            var rlcount = lecturers.length;        
+            var card =`<h1 class="bd-content-title dept-title">${header}</h2>`;
+            var cardPerRow = 3;
+            var currCard = 0;
+            var prevTType = '';
+          
+            for(var i=0;i<rlcount;i++){
+
+              if(currCard == 0 || prevTType !== lecturers[i].type){
+                if( prevTType !== lecturers[i].type) {
+                    if(i>0){
+                      card +="</div>";
+                      currCard = 0; 
+                    }
+                    card +=`<div><h3>${lecturers[i].type}</h3></div>`;
+                    prevTType = lecturers[i].type;
+                }
+                  card +=`<div class='row'>`;
+
+              }
+              
+              card += `
+              <div class="col-sm">
+                  <div class="card">
+                      <img src="Images/faculty/${lecturers[i].image}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                      <h5 class="card-title"><strong>${lecturers[i].first_name} ${lecturers[i].last_name}</strong></h5>
+                      <p class="card-text">${lecturers[i].description}</p>
+                      <p class="card-text">${lecturers[i].classes}</p>
+                      <a target='_blank' href="${lecturers[i].schedule_url}" class="btn btn-primary"> View Schedule</a>
+                      </div>
+                  </div>
+            </div>`;
+            if(currCard == (cardPerRow-1) || i == (rlcount-1)){
+                  card +=`</div>`;
+                  currCard=0;
+            } else {
+              currCard++;
+            }
+          }
+          return card;
+        }  
+        function generateAllDepartment(){
+            var deptCount = departments.length;
+            var cards = "";
+            for(var i=0;i<deptCount;i++){
+              cards += generateDepartment(departments[i].lecturers, departments[i].caption);
+            }
+            return cards;
+        }         
+        window.addEventListener("load", () =>{
+         var cards =  generateAllDepartment();
+         document.getElementById("container").innerHTML = cards;
+        });   
+ 
+       </script>
+       <style>
+           .col-sm {
+
+                margin-bottom: 2%;
+            }
+            a.btn.btn-primary {
+                width: 100%;
+            }
+		   .h1, h1 {
+				
+					margin-top: 6%;
+				}
+        .col-sm {
+          max-width: 380px!important;
+          width: 100%!important;
+        }
+.navbar.fixed-top.navbar-expand-lg.navbar-light.bg-light .navbar-brand {
+    font-size: 15px;
+}
+        @media screen and (max-width:599px){
+          .col-sm {
+          max-width: 100%!important;
+          width: 100%!important;
+        }
+        .h1,h1{
+          margin-top:15%;
+        }
+        }
+       </style>  
+	   <style type="text/css">
+body {
+    background-image: url(Images/orchidsclose.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+       </style>
+   </head>
+	   
+   <body>
+	 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="#">BC South Science & Wellness</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+    <ul class="navbar-nav mr-auto">
+		<li class="nav-item"> <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a> </li>
+      	<li class="nav-item"> <a class="nav-link" href="about.html">About </a> </li>
+    	<li class="nav-item active"> <a class="nav-link" href="faculty.html">Faculty</a> </li>      
+		<li class="nav-item"> <a class="nav-link" href="academic support.html">Academic Support</a> </li>
+     	<li class="nav-item"> <a class="nav-link" href="student support.html">Student Support</a> </li>
+            <!--- Start-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Departments</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="departments.html">Biological Science</a>
+                  <a class="dropdown-item" href="departments.html">Physical Sciences</a>
+                  <a class="dropdown-item" href="departments.html">Teacher Education Course</a>
+                </div>
+              </li>
+              <!-- End-->
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>	  
+    <h1 class="bd-content-title dept-title"></h1>   
+    <div class="container" id='container'></div> 
+   </body>
+   </html>

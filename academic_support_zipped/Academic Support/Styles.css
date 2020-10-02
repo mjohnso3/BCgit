@@ -1,0 +1,185 @@
+@charset "utf-8";
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    font-family: source-sans-pro;
+    font-style: normal;
+    font-weight: 200;
+}
+tr td center {
+    background-image: url(Pictures/background_pic.svg);
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: cover;
+}
+
+.card.col-md-4 {
+    background-color: #002F6E;
+    color: #FFFFFF;
+    width: 50%;
+    float: left;
+    opacity: 0.9;
+}
+pic1 {
+    margin-left: 0px;
+    left: auto;
+    right: auto;
+}
+
+.card.col-md-4 .card-body .card-subtitle.mb-2.text-muted {
+}
+left-column {
+    padding-top: 0px;
+    top: auto;
+    text-align: left;
+    border-top-left-radius: 0px;
+    background-color: #002F6E;
+
+}
+ASC-card {
+    bottom: auto;
+
+}
+
+
+
+h1 strong header {
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #002F6E;
+    background-position: 0% 0%;
+    border-radius: 1000px;
+    font-family: kristi;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-top: 20px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    opacity: 0.8;
+}
+.card.col-md-4 .card-img-top.rounded.img-fluid {
+}
+asc_icon {
+    clear: left;
+
+}
+header {
+    width: 69%;
+}
+header card {
+
+}
+td .card .card-body {
+    background-color: #380C8A;
+    color: #FFFFFF;
+    font-family: kristi;
+    font-style: normal;
+    font-weight: 400;
+}
+.card .card-body .card-title {
+    font-size: 5em;
+}
+.card .card-body .card-text {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+table tr .stack-column-center {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+table tr td {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+tr td h4 {
+
+}
+td ul li {
+    font-size: small;
+}
+tr td .button-a {
+}
+
+
+
+
+
+
+
+.email-container tr td {
+    background-color: #002F6E;
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+.card-body .card-title u {
+    opacity: 1;
+}
+.card .card-body .card-text {
+}
+tr td p {
+}
+tr td .fluid.rounded {
+    opacity: 1;
+}
+
+
+
+
+td .button-a .fluid.rounded-circle {
+    padding-left: 0px;
+    margin-left: -29px;
+    margin-bottom: -6px;
+
+}
+td .button-a .fluid.rounded-circle {
+    margin-left: -30px;
+}
+tr td h2 {
+    background-color: #002F6E;
+    color: #002F6E;
+}
+tr td h6 {
+    color: #002F6E;
+}
+.card .card-body .card-text {
+    font-family: didact-gothic;
+    font-style: normal;
+    font-weight: 400;
+}
+td h5 strong {
+    font-family: didact-gothic;
+    font-style: normal;
+    font-weight: 400;
+}
+tr td h4 {
+    font-family: league-gothic;
+    font-style: normal;
+    font-weight: 400;
+    font-size: xx-large;
+}
+.email-container tr td {
+    background-color: #002F6E;
+    opacity: 0.9;
+}
+
+tr td p {
+    font-family: didact-gothic;
+    font-style: normal;
+    font-weight: 400;
+}
+td ul li {
+    font-family: didact-gothic;
+    font-style: normal;
+    font-weight: 400;
+}
+.email-container tr td {
+}
+td h5 strong {
+    font-family: didact-gothic;
+    font-style: normal;
+    font-weight: 400;
+    font-size: x-large;
+    text-decoration: underline;
+}
