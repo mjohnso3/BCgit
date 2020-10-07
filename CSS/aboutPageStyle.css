@@ -2,32 +2,40 @@
 /* Global Styles */
 
 body {
-    margin-left: auto;
-    margin-right: auto;
-    width: 92%;
+    margin-left: -2px;
+    margin-right: -2px;
+    width: 100%;
     max-width: 960px;
-    padding-left: 2.275%;
-    padding-right: 2.275%;
-    background-color: #3448F0;
+    padding-left: 2%;
+    padding-right: 2%;
     color: #080808;
-    background-image: url(url);
+    background-image: url(../Images/Back%20garden.jpg);
+    background-color: #6B77D8;
+    background-size: auto auto;
+    background-position: 0% 0%;
+    float: none;
+    margin-top: -2px;
+    margin-bottom: -2px;
 }
 /* Header */
 header {
     text-align: center;
     display: block;
     color: #0A0A0A;
+    background-color: #6E76EE;
+    max-width: 100%;
 }
 header .profileLogo .logoPlaceholder {
-	background-color: rgba(208,207,207,1.00);
-	width: 187px;
-	text-align: center;
+    background-color: #6ADA33;
+    width: 215px;
+    height: 68px;
+    text-align: center;
 }
 header .logoPlaceholder span {
     width: 80px;
     height: 35px;
     font-family: kristi;
-    color: rgba(11,10,10,1.00);
+    color: rgba(255,255,255,1.00);
     font-size: 5em;
     font-weight: 400;
     line-height: 53px;
@@ -42,21 +50,22 @@ header .profilePhoto {
     border-collapse: separate;
 }
 header .profileHeader h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: source-sans-pro;
     color: rgba(15,15,15,1.00);
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 700;
     line-height: 24px;
+    font-style: normal;
 }
 header .profileHeader h3 {
-    font-family: sans-serif;
+    font-family: source-sans-pro;
     color: rgba(10,10,10,1.00);
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
+    font-style: normal;
 }
 hr {
-    background-color: rgba(8,8,8,1.00);
     height: 1px;
     color: #090808;
 }
@@ -85,6 +94,7 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 .mainContent .section1 {
     display: block;
     color: #111010;
+    background-color: #6E76EE;
 }
 .section1 .sectionTitle, .section2 .sectionTitle {
     font-family: 'Montserrat', sans-serif;
@@ -114,6 +124,7 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 .mainContent .section1 .section1Content span {
     color: rgba(13,12,12,1.00);
     font-family: sans-serif;
+    background-color: #6E76EE;
 }
 .section2 .sectionContentTitle {
     font-family: sans-serif;
@@ -133,20 +144,29 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.8;
+    background-color: #6E76EE;
 }
 .mainContent {
-	display: block;
+    display: block;
+    background-color: #6E76EE;
 }
+.profileLogo .logoPlaceholder.text-center span {
+    background-position: 0% 0%;
+}
+
 .mainContent .externalResourcesNav .externalResources {
-	background-color: rgba(208,207,207,1.00);
-	display: inline-block;
-	text-align: center;
-	margin-top: 0px;
-	padding-top: 3%;
-	cursor: pointer;
+    background-color: rgba(208,207,207,1.00);
+    display: inline-block;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 2%;
+    cursor: pointer;
+    margin-bottom: 80px;
+    padding-bottom: 5%;
 }
 .mainContent .externalResourcesNav .externalResources:hover {
-	background-color: rgba(153,153,153,1.00);
+    background-color: rgba(153,153,153,1.00);
+    padding-bottom: 0px;
 }
 .externalResourcesNav .externalResources a {
     font-family: 'Montserrat', sans-serif;
@@ -155,12 +175,21 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
     font-weight: 400;
     line-height: 18px;
     text-decoration: none;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-right: 0px;
+    padding-top: 0px;
+    bottom: 0px;
 }
 .stretch {
-	content: '';
-	display: inline-block;
-	margin-left: 2%;
-	margin-right: 2%;
+    content: '';
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: 2%;
+    -webkit-box-shadow: 0px 0px 0px 0px;
+    box-shadow: 0px 0px 0px 0px;
 }
 /* Footer */
 footer .footerDisclaimer {
@@ -185,6 +214,7 @@ footer .footerNote span {
 	color: rgba(181,178,178,1.00);
 	font-weight: 400;
 }
+
 
 /* Media query for Mobile devices*/
 @media only screen and (min-width : 285px) and (max-width : 480px) {
@@ -407,4 +437,19 @@ footer .footerNote {
 	margin-right: 3%;
 	font-family: sans-serif;
 }
+}
+
+@media (max-width: 947px){
+}
+
+@media (max-width: 1199.98px){
+}
+
+@media (min-width: 576px){
+}
+
+@media (min-width: 768px){
+}
+
+@media (min-width: 992px){
 }
