@@ -70,24 +70,7 @@ header {
     color: #FFFFFF;
     float: right;
    }
-footer {
-    font-size: x-small;
-    font-weight: 700;
-    bottom: 0px;
-    position: fixed;
-    float: left;
-    overflow-x: visible;
-    clear: both;
-    text-align: center;
-    background-image: -webkit-linear-gradient(270deg,rgba(11,11,11,1.00) 3.63%,rgba(11,10,10,0.00) 100%);
-    background-image: -moz-linear-gradient(270deg,rgba(11,11,11,1.00) 3.63%,rgba(11,10,10,0.00) 100%);
-    background-image: -o-linear-gradient(270deg,rgba(11,11,11,1.00) 3.63%,rgba(11,10,10,0.00) 100%);
-    background-image: linear-gradient(180deg,rgba(11,11,11,1.00) 3.63%,rgba(11,10,10,0.00) 100%);
-    width: 100%;
-    height: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
+
 body nav a {
     text-decoration: source-sans-pro;
     color: #F507E5;

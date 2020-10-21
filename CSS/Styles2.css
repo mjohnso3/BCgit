@@ -1,0 +1,7 @@
+.navbar.navbar-expand-lg.navbar-light.bg-light .navbar-brand{
+    color: #6D0AFB;
+    font-size: 1em;
+}   
+.navbar-nav.mr-auto .nav-item .nav-link:hover{
+    color: #F303C5;
+}

@@ -2,20 +2,27 @@
 /* Global Styles */
 
 body {
-    margin-left: -2px;
-    margin-right: -2px;
-    width: 100%;
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 150%;
     max-width: 960px;
     padding-left: 2%;
     padding-right: 2%;
     color: #080808;
     background-image: url(../Images/Back%20garden.jpg);
     background-color: #6B77D8;
-    background-size: auto auto;
-    background-position: 0% 0%;
-    float: none;
-    margin-top: -2px;
-    margin-bottom: -2px;
+    background-size: cover;
+    background-position: center;
+    float: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.navbar.navbar-expand-lg.navbar-light.bg-light .navbar-brand{
+    color: #6D0AFB;
+    font-size: 1em;
+}   
+.navbar-nav.mr-auto .nav-item .nav-link:hover{
+    color: #F303C5;
 }
 /* Header */
 header {
@@ -50,9 +57,9 @@ header .profilePhoto {
     border-collapse: separate;
 }
 header .profileHeader h1 {
-    font-family: source-sans-pro;
+    font-family: kristi;
     color: rgba(15,15,15,1.00);
-    font-size: 26px;
+    font-size: 5em;
     font-weight: 700;
     line-height: 24px;
     font-style: normal;
@@ -123,7 +130,7 @@ header .socialNetworkNavBar .socialNetworkNav img:hover {
 }
 .mainContent .section1 .section1Content span {
     color: rgba(13,12,12,1.00);
-    font-family: sans-serif;
+    font-family: kristi;
     background-color: #6E76EE;
 }
 .section2 .sectionContentTitle {

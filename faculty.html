@@ -1,14 +1,14 @@
-   <!DOCTYPE html>
-   <html lang="en">
-   <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Document</title>
-       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> 
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-       <script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> 
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> 
+<script>
             const urlParams = new URLSearchParams(window.location.search);
         const dept = urlParams.get('department');   
         if(dept == '') {
@@ -82,21 +82,31 @@
                        "subjects":[],
                        "lecturers":
                        [
-                           {"first_name":"Husam","last_name":"Abbasi","image":"husamabbasi.jpg","description":"Master of Science", "classes":"Chemistry","qualification": ["Master of Science"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=habbasi", "type":"Full Time Faculty"},
-						   
-						   {"first_name":"Collins","last_name":"Boston","image":"collinsboston.jpg","description":"", "classes":"Chemistry","qualification":["Bachelor Of Science"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=CBOSTON", "type":"Full Time Faculty"},					   
-						   {"first_name":"Rajendra","last_name":"Shakya","image":"rajendrashakya.jpg","description":"Doctor of Philosophy", "classes":"Chemistry","qualification": ["Doctor Of Philosophy"],"schedule_url":"", "type":"Full Time Faculty"},
-						   
-                           {"first_name":"Madan","last_name":"Singh","image":"madansingh.jpg","description":"Doctor of Philosophy", "classes":"Chemistry","qualification":["Doctor of Philosophy"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=msingh", "type":"Full Time Faculty"},
-                           {"first_name":"Prakash","last_name":"Manandhar","image":"prakashmanandhar.jpg","description":"Doctor of Philosophy", "classes":"Chemistry","qualification":["Doctor Of Philosophy"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=PMANANDH", "type":"Full Time Faculty"},
-                           {"first_name":"Ryan","last_name":"Mahabir","image":"ryanmahabir.jpg","description":"Master of Science", "classes":"Chemistry","qualification":["Master Of Science"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=RMAHABIR", "type":"Full Time Faculty"},    
+                		{"first_name":"Husam","last_name":"Abbasi","image":"husamabbasi.jpg","description":"Master of Science", "classes":"Chemistry","qualification": ["Master of Science"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=habbasi", "type":"Full Time Faculty"},
+				
+						{"first_name":"Lidia","last_name":"Berbeci","image":"lidiaberbeci.jpg","description":"", "classes":"Chemistry","qualification":["Doctor Of Philosophy"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=lberbeci", "type":"Full Time Faculty"},
+						{"first_name":"Collins","last_name":"Boston","image":"collinsboston.jpg","description":"", "classes":"Chemistry","qualification":["Master Of Science"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=CBOSTON", "type":"Full Time Faculty"},	
+                         
+                         {"first_name":"Prakash","last_name":"Manandhar","image":"prakashmanandhar.jpg","description":"Doctor of Philosophy", "classes":"Chemistry","qualification":["Doctor Of Philosophy"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=PMANANDH", "type":"Full Time Faculty"},
+                         {"first_name":"Ryan","last_name":"Mahabir","image":"ryanmahabir.jpg","description":"Master of Science", "classes":"Chemistry","qualification":["Master Of Science"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=RMAHABIR", "type":"Full Time Faculty"},    
                            
-						    {"first_name":"Chih Hung","last_name":"Wang","image":"chihhungwang.jpg","description":"Doctor of Philosophy", "classes":"Chemistry","qualification": ["Doctor Of Philosophy"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=CWANG2", "type":"Full Time Faculty"},
-						   					   
-						   {"first_name":"Sritana","last_name":"Yasui","image":"sritanayasui.jpg","description":"Doctor of Philosophy", "classes":"Chemistry","qualification":["Doctor Of Philosophy"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=syasui", "type":"Part Time Faculty"},     
-                           {"first_name":"Theresa","last_name":"Estanislao","image":"theresaestanislao.jpg","description":"Doctor of Philosophy", "classes":"Chemistry","qualification":["Master Of Science"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=TESTANIS", "type":"Part Time Faculty"}, 
+						 {"first_name":"Madan","last_name":"Singh","image":"madansingh.jpg","description":"Doctor of Philosophy", "classes":"Chemistry","qualification":["Doctor of Philosophy"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=msingh", "type":"Full Time Faculty"},
 						   
-						    {"first_name":"Jorge","last_name":"Lopez Tuero","image":"jorgelopeztuero.jpg","description":"Master of Science", "classes":"Physics","qualification":["Master Of Science"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=jlopeztu", "type":"Full Time Faculty"}
+						{"first_name":"Chih Hung","last_name":"Wang","image":"chihhungwang.jpg","description":"Doctor of Philosophy", "classes":"Chemistry","qualification": ["Doctor Of Philosophy"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=CWANG2", "type":"Full Time Faculty"},
+						   					   
+						{"first_name":"Lisa","last_name":"Baptiste","image":"lisabaptiste.jpg","description":"", "classes":"Chemistry","qualification":["Master of Science"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=lbaptist*", "type":"Part Time Faculty"},
+						       
+                       	{"first_name":"Theresa","last_name":"Estanislao","image":"theresaestanislao.jpg","description":"", "classes":"Chemistry","qualification":["Master Of Science"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=TESTANIS", "type":"Part Time Faculty"}, 
+						   
+					   	{"first_name":"Robert","last_name":"Glatt","image":"robertglatt.jpg","description":"", "classes":"Chemistry","qualification":["Doctor of Podiatry"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=RGLATT*", "type":"Part Time Faculty"}, 
+					   
+					   {"first_name":"Robert","last_name":"Houle","image":"roberthoule.jpg","description":"Doctor of Education", "classes":"Chemistry","qualification":["Doctor of Education"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=RHOULE", "type":"Part Time Faculty"},
+						{"first_name":"Sritana","last_name":"Yasui","image":"sritanayasui.jpg","description":"Doctor of Philosophy", "classes":"Chemistry","qualification":["Doctor Of Philosophy"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=syasui", "type":"Part Time Faculty"},
+						   
+						   
+						{"first_name":"Jorge","last_name":"Lopez Tuero","image":"jorgelopeztuero.jpg","description":"", "classes":"Physics","qualification":["Master of Science"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=jlopeztu", "type":"Full Time Faculty"},
+						 
+						 {"first_name":"Roberto","last_name":"Lopez-Boada","image":"robertolopezboada.jpg","description":"", "classes":"Physics","qualification":["Doctor of Philosophy"],"schedule_url":"https://start.broward.edu/directory/faculty.aspx?UserName=RLOPEZBO", "type":"Part Time Faculty"}
                        ]
                    }];
   
@@ -181,65 +191,69 @@
         });   
  
        </script>
-       <style>
-           .col-sm {
-
-                margin-bottom: 2%;
-            }
-            a.btn.btn-primary {
-                width: 100%;
-            }
-		   .h1, h1 {
-				
-					margin-top: 6%;
-				}
-        .col-sm {
-          max-width: 380px!important;
-          width: 100%!important;
-        }
+<style>
+.col-sm {
+    margin-bottom: 2%;
+}
+a.btn.btn-primary {
+    width: 100%;
+}
+.h1, h1 {
+    margin-top: 6%;
+}
+.col-sm {
+    max-width: 100%!important;
+    width: 100%!important;
+}
 .navbar.fixed-top.navbar-expand-lg.navbar-light.bg-light .navbar-brand {
     font-size: 15px;
 }
-        @media screen and (max-width:599px){
-          .col-sm {
-          max-width: 100%!important;
-          width: 100%!important;
-        }
-        .h1,h1{
-          margin-top:15%;
-        }
-        }
-       </style>  
-	   <style type="text/css">
+
+@media screen and (max-width:599px) {
+.col-sm {
+    max-width: 100%!important;
+    width: 100%!important;
+}
+.h1, h1 {
+    margin-top: 6%;
+}
+}
+</style>
+<style type="text/css">
 body {
     background-image: url(Images/orchidsclose.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-       </style>
-   </head>
-	   
-   <body>
-	 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="#">BC South Science & Wellness</a>
+</style>
+</head>
+
+<body>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="#">BC South Science & Wellness</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent1">
     <ul class="navbar-nav mr-auto">
-		<li class="nav-item"> <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a> </li>
-      	<li class="nav-item"> <a class="nav-link" href="about.html">About </a> </li>
-    	<li class="nav-item active"> <a class="nav-link" href="faculty.html">Faculty</a> </li>      
-		<li class="nav-item"> <a class="nav-link" href="academic support.html">Academic Support</a> </li>
-     	<li class="nav-item"> <a class="nav-link" href="student support.html">Student Support</a> </li>
-            <!--- Start-->
-           <li class="nav-item"> <a class="nav-link" href="departments.html">Departments</a> </li>
-              <!-- End-->
+      <li class="nav-item"> <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a> </li>
+      <li class="nav-item"> <a class="nav-link" href="about.html">About </a> </li>
+      <li class="nav-item active"> <a class="nav-link" href="faculty.html">Faculty</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="academic support.html">Academic Support</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="student support.html">Student Support</a> </li>
+      <!--- Start-->
+      <li class="nav-item"> <a class="nav-link" href="departments.html">Departments</a> </li>
+      <!-- End-->
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
-</nav>	  
-    <h1 class="bd-content-title dept-title"></h1>   
-    <div class="container" id='container'></div> 
-   </body>
-   </html>
+</nav>
+<h1 class="bd-content-title dept-title"></h1>
+<div class="container" id="container"></div>
+<footer>
+  <hr>
+  <p class="footerDisclaimer">2020  Copyright - <span>All Rights Reserved</span></p>
+  <p class="footerNote"></p>
+</footer>
+</body>
+</html>
