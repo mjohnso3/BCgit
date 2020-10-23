@@ -1,0 +1,11 @@
+@charset "utf-8";
+.card-body .card-title.text-center.text-capitalize strong {
+}
+.card-body .card-title.text-center.text-capitalize strong {
+    font-size: 3pc;
+    font-family: kristi;
+    font-style: normal;
+    font-weight: 400;
+    border-width: thick;
+    border-color: #01000B;
+}
